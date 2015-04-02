@@ -1,0 +1,80 @@
+/*
+
+Pratik Jaiswal: CSC 869, Spring 2015
+Naive Bayesian Classifier Output
+
+*/
+
+
+=== Run information ===
+
+Scheme:weka.classifiers.bayes.NaiveBayes 
+Relation:     instructor_assessment.symbolic
+Instances:    14
+Attributes:   5
+              assessment_score
+              instructor_degree
+              Degree_Type
+              instructing_experience
+              Acceptation
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                          Class
+Attribute                   yes     no
+                         (0.63) (0.38)
+=======================================
+assessment_score
+  Weak                       3.0    4.0
+  Good                       5.0    1.0
+  Excellent                  4.0    3.0
+  [total]                   12.0    8.0
+
+instructor_degree
+  Ba                         4.0    3.0
+  MA                         5.0    4.0
+  PHD                        3.0    1.0
+  [total]                   12.0    8.0
+
+Degree_Type
+  vocational                 4.0    4.0
+  cultural                   7.0    3.0
+  [total]                   11.0    7.0
+
+instructing_experience
+  TRUE                       4.0    4.0
+  FALSE                      7.0    3.0
+  [total]                   11.0    7.0
+
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances          12               85.7143 %
+Incorrectly Classified Instances         2               14.2857 %
+Kappa statistic                          0.6889
+Mean absolute error                      0.3366
+Root mean squared error                  0.3706
+Relative absolute error                 72.4985 %
+Root relative squared error             77.2915 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.889     0.2        0.889     0.889     0.889      0.922    yes
+                 0.8       0.111      0.8       0.8       0.8        0.911    no
+Weighted Avg.    0.857     0.168      0.857     0.857     0.857      0.918
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 8 1 | a = yes
+ 1 4 | b = no
+
