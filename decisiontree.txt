@@ -1,0 +1,66 @@
+/*
+
+Pratik Jaiswal: CSC 869, Spring 2015
+Decision Tree Output
+
+*/
+
+
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     instructor_assessment.symbolic
+Instances:    14
+Attributes:   5
+              assessment_score
+              instructor_degree
+              Degree_Type
+              instructing_experience
+              Acceptation
+Test mode:evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+assessment_score = Weak
+|   Degree_Type = vocational: no (2.0)
+|   Degree_Type = cultural: yes (3.0/1.0)
+assessment_score = Good: yes (4.0)
+assessment_score = Excellent
+|   instructing_experience = TRUE: no (2.0)
+|   instructing_experience = FALSE: yes (3.0)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	8
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+=== Summary ===
+
+Correctly Classified Instances          13               92.8571 %
+Incorrectly Classified Instances         1                7.1429 %
+Kappa statistic                          0.8372
+Mean absolute error                      0.0952
+Root mean squared error                  0.2182
+Relative absolute error                 20.5128 %
+Root relative squared error             45.5104 %
+Total Number of Instances               14     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.2        0.9       1         0.947      0.978    yes
+                 0.8       0          1         0.8       0.889      0.978    no
+Weighted Avg.    0.929     0.129      0.936     0.929     0.926      0.978
+
+=== Confusion Matrix ===
+
+ a b   <-- classified as
+ 9 0 | a = yes
+ 1 4 | b = no
+
