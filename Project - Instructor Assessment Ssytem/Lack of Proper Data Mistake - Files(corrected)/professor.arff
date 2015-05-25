@@ -1,0 +1,21 @@
+@relation instructor_assessment.symbolic
+@attribute assessment_score {Weak,Good,Excellent}
+@attribute instructor_degree {Ba,MA,PHD}
+@attribute Degree_Type {vocational,cultural}
+@attribute instructing_experience {TRUE, FALSE}
+@attribute Acceptation {yes, no}
+@data
+Weak,Ba,vocational,FALSE,no
+Weak,MA,cultural,TRUE,no
+Good,PHD,vocational,FALSE,yes
+Excellent,MA,vocational,FALSE,yes
+Excellent,Ba,cultural,FALSE,yes
+Excellent,Ba,cultural,TRUE,no
+Good,Ba,cultural,TRUE,yes
+Weak,MA,vocational,FALSE,no
+Weak,Ba,cultural,FALSE,yes
+Excellent,MA,cultural,FALSE,yes
+Weak,MA,cultural,TRUE,yes
+Good,MA,vocational,TRUE,yes
+Good,PHD,cultural,FALSE,yes
+Excellent,MA,vocational,TRUE,no
